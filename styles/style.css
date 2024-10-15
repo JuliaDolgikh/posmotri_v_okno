@@ -145,12 +145,12 @@ fieldset {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + span {
+input[type="checkbox"]:checked+span {
   content: '';
   display: block;
-  width: 15px; 
-  height: 15px; 
-  background-color: #fff; 
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
   outline: 1px solid currentColor;
   outline-offset: 2px;
 
@@ -166,7 +166,7 @@ button {
   text-align: center;
   background-color: transparent;
   color: #fff;
-  border: 1px solid currentColor; 
+  border: 1px solid currentColor;
 
 }
 
@@ -282,16 +282,16 @@ button:active {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
-  text-overflow: ellipsis; 
-  white-space: nowrap; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 
 
 .content__video-card-description {
   max-width: 194px;
-  text-overflow: ellipsis; 
-  white-space: nowrap; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
