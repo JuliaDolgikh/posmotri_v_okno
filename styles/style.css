@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -39,14 +39,13 @@ ol {
   list-style: none;
 }
 
-
 .content {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   margin: auto;
   min-width: 1140px;
-  gap: 33px;
+  gap: 32px;
 }
 
 .result__video-container {
@@ -72,18 +71,15 @@ fieldset {
   border: none;
 }
 
-
 .search-form__fieldset {
   display: flex;
   color: #fff;
   flex-direction: column;
-  width: fit-content;
   margin-top: 16px;
-
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -102,13 +98,11 @@ fieldset {
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
   min-width: 225px;
-
 }
 
 .search-form__textfield:focus {
   outline: none;
 }
-
 
 .search-form__checkbox-list {
   display: flex;
@@ -118,6 +112,7 @@ fieldset {
 }
 
 .search-form__label {
+  width: fit-content;
   display: flex;
   align-items: center;
 }
@@ -130,7 +125,6 @@ fieldset {
   text-decoration: underline;
   cursor: pointer;
 }
-
 
 .search-form__pseudo-checkbox {
   display: inline-block;
@@ -145,21 +139,20 @@ fieldset {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked+span {
-  content: '';
+.search-form__checkbox:checked+.search-form__pseudo-checkbox {
+  content: "";
   display: block;
   width: 15px;
   height: 15px;
   background-color: #fff;
   outline: 1px solid currentColor;
   outline-offset: 2px;
-
 }
 
 button {
   cursor: pointer;
   appearance: none;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -167,7 +160,6 @@ button {
   background-color: transparent;
   color: #fff;
   border: 1px solid currentColor;
-
 }
 
 button:focus {
@@ -187,36 +179,31 @@ button:active {
   text-decoration: none;
 }
 
-
 .search-form__submit-button {
-  min-width: 194px;
-  min-height: 34px;
+  width: 194px;
+  height: 34px;
   margin-top: 38px;
 }
 
-
 .more-button {
-  width: 100%;
-  height: 100%;
+  min-width: 399px;
+  min-height: 34px;
 }
 
 .content__details {
-  width: 100%;
-  height: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
 }
 
 .title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
   color: #fff;
   text-transform: uppercase;
-
 }
 
 .content__accent {
@@ -224,11 +211,10 @@ button:active {
 }
 
 .content__list {
-  height: 298px;
-  overflow: auto;
+  max-height: 298px;
+  overflow-y: auto;
   margin-top: 26px;
   position: relative;
-
 }
 
 .content__list-item:not(:last-child) {
@@ -236,8 +222,7 @@ button:active {
 }
 
 .content__card-link {
-  width: 100%;
-  height: 100%;
+  max-height: 298px;
   display: block;
   text-decoration: none;
   color: #fff;
@@ -262,8 +247,9 @@ button:active {
   text-decoration: none;
 }
 
-.content__card-link_current:nth-child(n):focus-visible {
+.content__card-link_current:checked {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .content__video-card {
@@ -273,12 +259,10 @@ button:active {
   justify-content: space-between;
 }
 
-
 .content__video-card-title {
-  max-width: 194px;
   margin-bottom: 6px;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -287,26 +271,26 @@ button:active {
   overflow: hidden;
 }
 
+.content__video-card-description-container {
+  flex-grow: 1;
+  max-width: 198px;
+}
 
 .content__video-card-description {
-  max-width: 194px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
-
 }
-
 
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: right;
-
 }
 
 .visually-hidden {
